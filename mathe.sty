@@ -1,0 +1,47 @@
+% mathsetup.sty
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{mathe}[2026/03/04 Mathematische Makros]
+
+% Allgemein
+\newcommand{\set}[1]{\{#1\}}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\C}{\mathbb{C}}
+
+% Elementare Zahlentheorie
+\DeclareMathOperator{\ggt}{ggT}
+\DeclareMathOperator{\kgv}{kgV}
+\newcommand{\teilt}{\arrowvert}
+\newcommand{\kong}[3]{#1 \equiv #2\; (\operatorname{mod}\, #3)} % #1 kongruent zu #2 modulo #3
+\newcommand{\nkong}[3]{#1 \not\equiv #2\; (\operatorname{mod}\, #3)} % nicht kongruent
+\newcommand{\Zi}{\Z[i]} % Gauß'sche Zahlen
+
+% Lineare Algebra
+\DeclareMathOperator{\adj}{Adj}
+\DeclareMathOperator{\eig}{Eig}
+\DeclareMathOperator{\Ker}{Ker}
+\DeclareMathOperator{\diag}{diag}
+\DeclareMathOperator{\Ni}{Ni}
+
+\newcommand{\skal}[1]{\langle#1\rangle} % Skalarprodukt
+\newcommand{\lin}[1]{\langle#1\rangle} % lineare Hülle
+\newcommand{\rlin}[1]{\langle#1\rangle^\R} % reelle lineare Hülle
+\newcommand{\linr}[1]{\rlin{#1}}
+\newcommand{\clin}[1]{\langle#1\rangle^\C} % komplexe lineare Hülle
+\newcommand{\linc}[1]{\clin{#1}}
+
+% Matrizen
+\newcommand{\transf}[2]{{}_\mathcal{#1}\mathrm{M}_\mathcal{#2}} % Transformationsmatrix
+\newcommand{\mat}[1]{\begin{pmatrix}#1\end{pmatrix}}
+\newcommand{\smat}[1]{
+  \begingroup
+  \renewcommand*{\arraystretch}{1.3}
+  \begin{pmatrix}#1\end{pmatrix}
+  \endgroup
+} % Stretch-Matrix (Mehr Platz für Brüche)
+
+
+\endinput
