@@ -2,7 +2,7 @@
 README-Datei des Repository "TeX". 
 
 ## Inhalte
-Aktuell besteht das Repository aus zwei Paketen. Weitere Dateien (Beispiele, Vorlagen) sind geplant.
+Aktuell besteht das Repository aus zwei Paketen und einem Beispiel. Weitere Beispiele und Dateien (beispielsweise Vorlagen) sind geplant.
 
 ### Pakete
 * Das Paket `basis.sty` lädt eine Reihe von Paketen, die allgemein erforderlich sind, etwa für die Zeichencodierung und Sprachpakete.
